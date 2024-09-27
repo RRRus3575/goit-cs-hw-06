@@ -8,7 +8,7 @@ import pymongo
 from socketserver import ThreadingMixIn
 
 # Налаштування для підключення до MongoDB
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+client = pymongo.MongoClient("mongodb://mongodb:27017/")
 db = client["messages_db"]
 messages_collection = db["messages"]
 
